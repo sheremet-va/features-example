@@ -1,0 +1,29 @@
+{
+  "name": "@vitest/example-test",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:browser": "vitest --browser=chromium",
+    "test:types": "vitest typecheck",
+    "test:bail": "vitest run --bail 1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/vue": "^7.0.0",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vitest/ui": "latest",
+    "@vue/test-utils": "^2.4.1",
+    "jsdom": "^22.1.0",
+    "playwright": "^1.37.1",
+    "typescript": "^5.2.2",
+    "vite": "latest",
+    "vitest": "latest",
+    "vue": "^3.3.4"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
